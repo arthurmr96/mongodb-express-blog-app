@@ -5,12 +5,13 @@ const { MongoClient } = require('mongodb');
 
 const uri = process.env.MONGODB_URI || 'mongodb://localhost:27017';
 const dbName = process.env.MONGODB_DB || 'blogging_app_examples';
+const APP_NAME = 'devrel-article-mongodb-schema-design-blogging-app';
 
 let client = null;
 
 async function getDb() {
   if (!client) {
-    client = new MongoClient(uri);
+    client = new MongoClient(uri, { appName: APP_NAME });
     await client.connect();
   }
   return client.db(dbName);

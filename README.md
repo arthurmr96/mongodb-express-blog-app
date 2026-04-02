@@ -1,6 +1,6 @@
 # How to Design Nested Documents for a Blogging App in MongoDB
 
-Code companion for the article **"How to Design Nested Documents for a Blogging App in MongoDB"** _(link coming soon)_.
+Code companion for the article [**How to Design Nested Documents for a Blogging App in MongoDB**](https://www.geeksforgeeks.org/mongodb/design-nested-documents-for-blogging-app-mongodb/).
 
 Each example file maps directly to a section of the article and can be read alongside it. The repo also ships a small Express REST API that puts the final recommended schema into practice.
 
